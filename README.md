@@ -14,6 +14,12 @@ Supports untagged, 802.1Q-tagged, and double-tagged Ethernet frames.
 
 Refer to manual.pdf for more precise specification.
 
+# Build
+The provided Makefile will build `dhcp-stats` file
+```shell
+make
+```
+
 # Usage
 ```shell
 ./dhcp-stats [-r <filename>] [-i <interface-name>] <ip-prefix> [<ip-prefix> [ ... ]]
