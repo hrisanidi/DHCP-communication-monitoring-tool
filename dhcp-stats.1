@@ -1,0 +1,21 @@
+.TH DHCP-STATS 1
+.SH NAME
+dhcp-stats \- get utilization statistics on DHCP server for specified pools of addresses
+.SH SYNOPSIS
+.B dhcp-stats
+[\fB\-r\fR \fIfilename\fR]
+[\fB\-i\fR \fIinterface-name\fR]
+.IR ip-prefix
+[\fIip-prefix\fR [...]]
+.SH DESCRIPTION
+.B dhcp-stats
+supports untagged, 802.1Q-tagged, and double-tagged Ethernet frames. Accepts any correctly formatted IPv4 network addresses with prefix length between 1 and 30. Network and broadcast addresses of given pools are not counted as host addresses in the statistics. Use CTRL + C to exit gracefully.
+.SH EXAMPLES
+.B dhcp-stats
+-i eth0 192.168.1.0/24 172.16.32.0/24 192.168.0.0/22
+.br
+.B dhcp-stats
+-r traffic.pcap 192.168.1.0/24
+
+
+
